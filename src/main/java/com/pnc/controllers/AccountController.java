@@ -25,7 +25,7 @@ public class AccountController {
         return db;
     }
 
-    @GetMapping("/user")
+    @GetMapping("/user/one")
     public String getUserName(){
         log.info(userName);
         log.info(db);
