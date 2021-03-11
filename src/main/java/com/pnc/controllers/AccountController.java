@@ -17,10 +17,18 @@ public class AccountController {
     String userName;
     @Value("${spring.datasource.url}")
     String db;
+
     @GetMapping("acc")
     public String getAccountNumber(){
         log.info(userName);
         log.info(db);
         return db;
+    }
+
+    @GetMapping("user")
+    public String getUserName(){
+        log.info(userName);
+        log.info(db);
+        return userName;
     }
 }
