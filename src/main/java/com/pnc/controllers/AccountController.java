@@ -22,7 +22,7 @@ public class AccountController {
     public String getAccountNumber(){
         log.info(userName);
         log.info(db);
-        return db;
+        return "Connected on : "+ db + "with user"+ userName;
     }
 
     @GetMapping("/user/one")
